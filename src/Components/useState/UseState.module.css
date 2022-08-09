@@ -1,0 +1,77 @@
+
+/* :root have more specificity than html  */
+:root{
+    --color-hue: 218;
+    --color-primary: hsl(var(--color-hue), 49%,43%);
+    --color-primary-light: hsl(var(--color-hue), 49%, 50%);
+    --color-body: hsl(var(--color-hue), 49%, 96%);
+    --color-text: hsl(var(--color-hue), 20%, 20%);
+}
+.dark-mode{
+    --color-primary: hsl(var(--color-hue), 49%, 48%);
+    --color-primary-light: hsl(var(--color-hue), 49%, 50%);
+    --color-body: hsl(var(--color-hue), 49%, 10%);
+    --color-text: hsl(var(--color-hue), 20%, 90%)
+}
+
+body main{
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: var(--color-body);
+    font-family: sans-serif;
+}
+p{
+    color: var(--color-text );
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+
+
+h1{
+    font-size: 3rem;
+    margin: 1rem;
+    color: var(--color-primary);
+}
+.toggle-mode{
+    margin: 1rem;
+    border: none;
+    outline: none;
+    font-size: inherit;    
+    /* inherit means takes the property of the parent element  */
+    padding: 1rem 1.5rem;
+    background: var(--color-primary);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s background;
+}
+.toggle-mode:hover{
+    background: var(--color-primary-light);
+}
+.btn{
+    text-align: end;
+}
+
+
+/* rgb system */
+/* rgb(red, green, blue) */
+/* red/green/blue quantity vary from 0 to 255 */
+/* equal rgb quantity ===> greish color  */
+/* as quantity of rgb increases intensity also increases, at rgb 0,0,0 black at rgb 255,255,255 white */
+
+/* hex code is same as rgb  */
+/* #01f2aa   first 2 code are quantity of red and vice versa for green and blue  */
+/* numbers vary from 0 to 9 and character from a to f so total 16, 16*16 = 256 which same as combination of rgb */
+
+/* hsl system */
+/* hue  --> representing proper color, on the color wheel from 0 to 360 */
+/* saturation --> represeting how pure the color is */
+/* light --> the light to be fall on the color  */
+/* hsl(360, 100%,50%)  */
+/* 0 saturation => greish, 100 saturatrion ==> pure */
+/* 0 light ==> black, 100 light ==> white  */
