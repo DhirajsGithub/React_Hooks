@@ -1,0 +1,23 @@
+html{
+    background-color: antiquewhite;
+}
+.UserData{
+    font-family: sans-serif;
+    max-width: 80%;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+.UserData ul {
+    padding: 2rem;
+}
+.UserData h1{
+    font-size: 2rem;
+}
+.UserData li{
+    font-size: 2rem;
+    margin: 1rem;
+}
+.loading{
+    font-size: 1.5rem;
+    color: red;
+}
