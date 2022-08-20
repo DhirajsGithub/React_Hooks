@@ -11,3 +11,8 @@
 * a function that should be executed after every component evaluation if the specific dependencies changed
 * the fucntion only runs if the dependencies changed, or if the hook is provided with empty dependencies the function inside will only run at when rendering of the page happen
 * Data fetching, setting up a subscription, and manually changing the DOM in React components are all examples of side effects.
+
+# 3. useRef hook ():
+* The useRef Hook allows you to persist values between renders.
+* It can be used to store a mutable value that does not cause a re-render when updated.
+* It can be used to access a DOM element directly.
