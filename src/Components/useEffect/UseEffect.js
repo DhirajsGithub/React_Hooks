@@ -7,8 +7,14 @@ import User from "./User";
 const UseEffect = () => {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [fetchData, setFetchData] = useState(true);
+
+  const fetchDataHandler = ()=>{
+    setFetchData(true)
+  }
 
   useEffect(() => {
+    setFetchData(false)
     const fetchUsers = async () => {
         setLoading(true);
       const response = await fetch(
@@ -23,13 +29,14 @@ const UseEffect = () => {
     } catch (error) {
       alert(error);
     }
-  }, []);
-  console.log(users);
+  }, [fetchData]);
 
   return (
     <Fragment>
+    
       <div className={classes.UserData}>
         <h1>User Data</h1>
+        <button onClick={fetchDataHandler} className={classes.btn}>Refresh</button>
         {loading && <p className={classes.loading}>Loading...</p>}
         <ul>
           {users &&
