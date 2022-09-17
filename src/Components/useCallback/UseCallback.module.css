@@ -1,0 +1,22 @@
+.memo {
+    transition: 0.5s ease-in;
+    margin: 0 auto;
+    padding: 4rem;
+    font-size: 4rem;
+    text-align: center;
+}
+.memo .input input{
+    font-size: 3rem;
+}
+.change-theme button {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+}
+.change-theme button:hover{
+    cursor: pointer;
+}
+.bgTheme{
+    transition: 0.5s ease-out;
+    background-color: #121212;
+    color: rgb(238, 238, 238);
+}

@@ -4,7 +4,7 @@
     text-align: center;
 }
 .form {
-    width: 500px;
+    max-width: 500px;
     background-color: grey;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.211);
     padding: 2rem 0;
