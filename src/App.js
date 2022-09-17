@@ -11,8 +11,8 @@ function App() {
     // <UseState />
     // <UseEffect />
     // <UseRef />
-    <UseMemo />
-    // <UseCallback />
+   // <UseMemo />
+    <UseCallback />
   );
 }
 
